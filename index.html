@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jPlayer</title>
+    <link rel="stylesheet" href="css/common.css">    
+    <link rel="stylesheet" href="css/musicplayer.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
+    <script src="js/musiclist.js"></script>    
+    <script src="js/main.js"></script>    
+</head>
+<body>
+    <div class="container">
+    <div class="component-header row">
+        <img src="images/music.png" width="40" alt="" class="-col-auto" />
+        <h1 class="caption">jQuery Music Player</h1>
+    </div>
+
+    <div class="st-scroll">
+        <section class="st-panel">
+    <div class="player-page">
+        <h1 class="caption"><a href="#musiclist">我的私人音乐坊 &gt;</a></h1>
+        <div class="mt20 row">
+            <div class="controll-wrapper">
+                <h2 class="music-title">歌曲名称</h2>
+                <h3 class="music-artist">歌手</h3>
+                <div class="row mt20">
+                    <div class="left-time -col-auto">-2:00</div>
+                    <div class="volume-container">
+                        <i class="icon-volume rt" style="top: 5;left: -5"></i>
+                        <div class="volume-wrapper">
+                            <!-- 音量控制部分 -->
+                            <div id="volumeBar" class="component-progress">
+                                <div class="volume"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 10;line-height:10">
+                    <div id="player"></div>
+                    <!-- 进度控制部分 -->                    
+                    <div id="progressBar" class="component-progress">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="mt35 row">
+                    <div>
+                        <i class="icon prev"></i>
+                        <i class="icon ml20 play"></i>
+                        <i class="icon next ml20"></i>
+                    </div>
+                    <div class="-col-auto">
+                        <i id="repeat" class="icon repeat-cycle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="-col-auto cover">
+                <img class="music-pic" src="" alt="歌曲名称">
+            </div>
+        </div>
+    </div>
+    </section>
+   
+    <section class="st-panel" id="musiclist">
+    <ul>
+        <!-- <li class="component-musiclistitem row focus ">
+            <p><strong>魔鬼中的天使</strong> - 田馥甄</p>
+            <p class="-col-auto delete"></p>
+        </li> -->
+    </ul>
+    </section>
+    </div>
+
+    </div>
+</body>
+</html>
